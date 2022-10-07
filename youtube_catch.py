@@ -22,7 +22,7 @@ options=webdriver.ChromeOptions()
 options.add_argument("--disable-notifications")
 options.add_argument("--headless")
 
-chrome=webdriver.Chrome(executable_path='C:/Users/Lisa/Desktop/crawler_youtube/chromedriver',options=options)
+chrome=webdriver.Chrome(executable_path={webdriver path},options=options)
 url='https://www.youtube.com/'
 chrome.get(url)
 chrome.execute_script("window.scrollTo(0, document.body.scrollHeight);" )
